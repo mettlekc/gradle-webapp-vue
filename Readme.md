@@ -100,9 +100,6 @@ processResources.dependsOn 'buildFrontEnd'
 ```
 
 ### 참고한 링크
-
-https://deockstory.tistory.com/26
-
-vue js devServer proxy : https://cli.vuejs.org/config/#devserver-proxy
-
-Gradle npmTask: https://github.com/srs/gradle-node-plugin/blob/master/docs/node.md
+- https://deockstory.tistory.com/26
+- vue js devServer proxy : https://cli.vuejs.org/config/#devserver-proxy
+- Gradle npmTask: https://github.com/srs/gradle-node-plugin/blob/master/docs/node.md
