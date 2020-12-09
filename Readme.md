@@ -26,7 +26,7 @@ vue.config.js
 const path = require('path')
 
 module.exports = {
-    
+    ...
     devServer: {
         // Various Dev Server settings
         host: 'localhost', // can be overwritten by process.env.HOST
@@ -39,6 +39,7 @@ module.exports = {
             },
         }
     }
+    ...
 }
 ```
 
@@ -53,7 +54,7 @@ npm run build
 ```
 
 ### build 위치 설정
-- 위치 설정 없을 경우 (root)/static
+- 위치 설정 없을 경우 : (root)/static
 
 vue.config.js
 ```javascript
