@@ -20,7 +20,8 @@ vue create frontend
 
 ### Dev 서버 Proxy 설정
 - Local 개발 Proxy
-**vue.config.js**
+
+vue.config.js
 ```javascript
 const path = require('path')
 
