@@ -54,7 +54,8 @@ npm run build
 
 ### build 위치 설정
 - 위치 설정 없을 경우 (root)/static
-**vue.config.js**
+
+vue.config.js
 ```javascript
 module.exports = {
     ....
@@ -64,7 +65,8 @@ module.exports = {
 ```
 
 ### gradle build 할 때 npm build
-**build.gradle**
+
+build.gradle
 ```groovy
 plugins {
 ...
