@@ -20,8 +20,7 @@ public class BaseController {
 
     @GetMapping("/")
     public String base() {
-        log.debug("{}", zone);
-        return zone;
+        return "index.html";
     }
 
     @GetMapping("/get")
