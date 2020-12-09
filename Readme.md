@@ -1,13 +1,13 @@
-### Gradle Webapp Sample
+# Gradle Webapp Sample
 
 https://spring.io/guides/gs/spring-boot-docker/
 
-Gradle Build
+### Gradle Build
 ```
 gradlew clean build -Pprofile=dev -x test && java -jar build/libs/gradle-webapp-1.0-SNAPSHOT.jar
 ```
 
-Docker Build/Run
+### Docker Build/Run
 ```
 $ docker build --build-arg JAR_FILE=build/libs/*.jar -t cheol/gradle-webapp-docker:1.0-SNAPSHOT
 $ docker run -p 8080:8080 cheol/gradle-webapp-docker
@@ -18,7 +18,7 @@ cd src\main
 vue create frontend
 ```
 
-Dev 서버 Proxy 설정
+### Dev 서버 Proxy 설정
 - Local 개발 Proxy
 - vue.config.js
 ```javascript
@@ -41,17 +41,17 @@ module.exports = {
 }
 ```
 
-Vue 실행
+### Vue 실행
 ```
 npm run server
 ```
 
-Vue 빌드
+### Vue 빌드
 ```javascript
 npm run build
 ```
 
-build 위치 설정
+### build 위치 설정
 - 위치 설정 없을 경우 (root)/static
 - vue.config.js
 ```javascript
@@ -62,7 +62,7 @@ module.exports = {
 }
 ```
 
-gradle build 할 때 npm build
+### gradle build 할 때 npm build
 ```groovy
 plugins {
 ...
@@ -95,7 +95,7 @@ task buildFrontEnd(type: NpmTask, dependsOn: setUp) {
 processResources.dependsOn 'buildFrontEnd'
 ```
 
-참고한 링크
+### 참고한 링크
 
 https://deockstory.tistory.com/26
 
